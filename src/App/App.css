@@ -1,0 +1,27 @@
+#video {
+  width: 720px;
+  min-width: 720px;
+}
+
+#highlight {
+  width: 720px;
+  min-width: 720px;
+  height: 405px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#render_highlight {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.hl_wrapper {
+  position: relative;
+}
+
+#render {
+  display: none;
+}
