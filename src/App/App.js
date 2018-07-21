@@ -28,7 +28,7 @@ class App extends Component {
         const h = rect[3] * y_Rate;
         this._draw(x, y, w, h, hlctx);
       }
-      // requestAnimationFrame(this._renderImage);
+      requestAnimationFrame(this._renderImage);
     }
   };
   _renderCanvas = () => {
@@ -56,7 +56,7 @@ class App extends Component {
         data
       })
       .then(response => {
-        const { data } = response;
+        const { data: { data } } = response;
         console.log("data", data);
         this.rectData = data;
       })
