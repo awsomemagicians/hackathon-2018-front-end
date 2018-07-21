@@ -56,7 +56,8 @@ class App extends Component {
         data
       })
       .then(response => {
-        const { data: { data } } = response;
+        const { data } = response;
+        console.log("data", data);
         this.rectData = data;
       })
       .catch(error => {
@@ -88,7 +89,7 @@ class App extends Component {
           crossOrigin="anonymous"
         >
           <source
-            src="https://video.fsgn2-1.fna.fbcdn.net/v/t42.9040-2/37417655_2192667157414075_8949066004806238208_n.mp4?_nc_cat=0&efg=eyJybHIiOjI3NTEsInJsYSI6MTA2MSwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2751&vabr=1834&oh=7c019032905492e6fa696a4dcaf8ace9&oe=5B534367"
+            src="https://uc3283ec9754541bbc12f37f26c1.dl.dropboxusercontent.com/cd/0/get/AL6wykzR10_gvTf9faraTb9yH7ZCREg4m5_DnY1z00e2mlLnCeIwXQI4CL0b-5Lo_ICIpFqYwt-vjxteV_J2oKxxvhxzc_0QUl5iTDFmi8tSL7d9KykiG6XhhH6hymzK75xciDPGJWEllbZ3LVv71pOAS8Judi0YUbzM1zB5EuFxct77DSK3h7ow9wu4PFH_WJE/file?_download_id=09844689936978979796569874809395249830962066094722527868076234081&_notify_domain=www.dropbox.com&dl=1"
             type="video/mp4"
           />
           Your browser does not support HTML5 video.
